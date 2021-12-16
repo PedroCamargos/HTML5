@@ -1,0 +1,31 @@
+header{
+	font-family: fantasy;
+	font-size: 50pt;
+}
+
+.variacao1{
+	text-decoration: underline;
+	font-family: verdana;
+	color: green;
+}
+
+.variacao2{
+	font-style: italic;
+	font-family: comic-sans;
+	color: purple;
+}
+
+.variacao3{
+	font-family: arial;
+	color: black;
+}
+
+#id1{
+	font-family: verdana;
+	color: blue;
+}
+
+.classeA{
+	font-family: tahoma;
+	color: #333333;
+}
