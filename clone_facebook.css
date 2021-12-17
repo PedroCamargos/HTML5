@@ -1,0 +1,196 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	border: 0;
+	background: #f0f2f5 ;
+	font-family: Helvetica, sans-serif;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+body,
+input,
+button{
+	font-family: Helvetica, sans-serif; 
+}
+.container {
+	padding-top: 130px; /*espaço do topo*/
+	padding-bottom: 200px; /*espaço do  fim*/
+	max-width: 980px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	align-items: center;
+	gap: 40px;
+}
+
+.intro{
+	margin-bottom: 50px;
+}
+
+.logo{
+	display: block; /*retirar margem que pode haver*/
+	max-width: 100%;
+	height: 106px;
+	margin: -28px;
+}
+
+h2{
+	font-family: Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+	color: #1c1e21;
+	max-width: 500px;
+}
+
+form{
+	padding : 16px 16px 25px 16px; /*topo direita baixo esquerda - sentiro horario*/ 
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgb(0, 0, 0, .1) ;
+}
+
+form a, 
+input, 
+button{
+	display: block;
+}
+
+input{
+	width: 100%;
+	display: block;
+	margin-bottom: 12px;
+	padding: 16px;
+	border-radius: 6px;
+	border: 1px solid #dddfe2;
+	outline: none;
+}
+
+input:focus{
+	border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2;
+}
+
+input[placeholder]{
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+input:placeholder{
+	font-size: 18px;
+	color: #1d2129;
+	opacity: 0.6;
+}
+
+form a{
+	font-size: 14px;
+	color: #1877f2;
+	margin-top: 16px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #dadde1;
+}
+
+form a:hover{
+	text-decoration: underline;
+}
+
+.entrar, 
+.criarConta{
+	font-weight: bold;
+	color: white;
+	border-radius: 6px;
+	border: none;
+	padding:  16px;
+	cursor: pointer;
+	transition: 200ms cubic-bezier(.08,.52,.52,1)
+}
+
+.entrar{
+	font-size: 20px;
+	background: #1877f2;
+	width: 100%; /*ocupa 100% do espaço q tem disponivel pra ele no form*/
+}
+
+.entrar:hover{
+	background: #166fe5;
+}
+
+.criarConta{
+	font-size: 17px;
+	background: #42b72a;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.criarConta:hover{
+	background: #36a420;
+}
+
+p, p > a{
+	color: #1c1c21;
+	font-size: 14px;
+	margin: 28px 0 0 0; /*margem 28 em cima*/
+	text-align: center;
+}
+
+p > a{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+p > a:hover{
+	text-decoration: underline;
+}
+
+.rodape{
+	letter-spacing: 4px;
+}
+
+footer, footer > a{
+	letter-spacing: 3px;
+	font-family: sans-serif;
+	background-color: #f0f2f5;
+	font-size: 14px;
+	text-align: center;
+	color: #737373;
+	align-items: center;
+	justify-content: center;
+}
+
+footer > a{
+ 	font-weight: bold;
+	text-decoration: none;
+
+}
+
+footer > a:hover{
+	text-decoration: underline;
+}
+
+@media(max-width:  900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+	.logo{
+		margin: -28px auto;
+	}
+	.intro{
+		text-align: center;
+		margin: 0 auto ;
+	}
+	p{
+		text-align: center;
+	}
+	form{
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
